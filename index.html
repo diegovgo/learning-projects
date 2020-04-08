@@ -4,26 +4,36 @@
     <title>
     University Connection
     </title>
-    <link href="style.css" rel="stylesheet"> </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1 id="hola">XnameNew X</h1>
-    <h1>Please get attend to place a commitement</h1>
+    <h1 id="homeTitle"></h1>
     <div id="barra">
-        <h3 class="barTitle">Cursos</h3>
-        <h3 class="barTitle">Tutoriales</h3>
-        <h3 class="barTitle">Cuestionario</h3>
+        <h3 class="barTitle"><a href="cursos.html">Cursos</a></h3>
+        <h3 class="barTitle"><a href="tutoriales.html">Tutoriales</a></h3>
+        <h3 class="barTitle"><a href="cuestionario.html">Cuestionario</a></h3>
+        <h3 class="barTitle"><a href="#registro">Registro</a></h3>
     </div>
 
+<div class="screen-only">
     <div id="registro">
         <table>
             <tr>
-                <form class="userRegister">
+        <form class="userRegister">
                     <h3 style="color: black;" class="titleForms">Registro</h3>
-                   <th> Nombre <input type="text" placeholder="nombre completo"></th>
-                    <th>Correo <input type="text" placeholder="pepito@ejemplo.com"></th>
-                    <th>Contrasena <input type="password" placeholder="contrasena"></th>
-            </tr>
+                   <th> Nombre <input name="name" type="text" placeholder="nombre completo"></th>
+                    <th>Correo <input name="email" type="text" placeholder="pepito@ejemplo.com"></th>
+                    <th>Contrasena <input name="password" type="password" placeholder="contrasena"></th>
+        </tr>
+        <tr>
+                    <th>Sexo <input name="sex" type="radio" value="men"> Hombre
+                            <input name="sex" type="radio" value="women"> Mujer </th>
+                    <th>Pais <input name="country" list="countries" placeholder="pais">
+                    <datalist id="countries">
+                        <option value="Peru pe mascota">
+                        <option value="Chileno cagon">
+                    </datalist> </th>
+        </tr>
         </form>
         </table>
             <button>Click here!</button>
@@ -35,6 +45,7 @@
         </p>-->
 
     </div>
+</div>
     
 
 <script src="type.js"></script>
